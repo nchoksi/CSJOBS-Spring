@@ -5,10 +5,10 @@
         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
     version="3.0" id="csjobs">
 
-    <display-name>CS Jobs (Exam Edition)</display-name>
+    <display-name>Spring MVC Example</display-name>
 
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
     <servlet>
@@ -21,29 +21,5 @@
         <servlet-name>csjobs</servlet-name>
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
-
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
-
-    <filter>
-        <filter-name>jpaFilter</filter-name>  
-        <filter-class>org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter</filter-class>  
-    </filter>  
-
-    <filter-mapping>  
-        <filter-name>jpaFilter</filter-name>  
-        <url-pattern>/*</url-pattern>  
-    </filter-mapping>
-    
-     <filter>
-        <filter-name>springSecurityFilterChain</filter-name>
-        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
-    </filter>
-
-    <filter-mapping>
-        <filter-name>springSecurityFilterChain</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
 
 </web-app>

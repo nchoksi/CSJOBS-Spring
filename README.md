@@ -1,12 +1,9 @@
-# CSJOBS-Spring
+# CSJOBS-Hibernate and Spring
 
-###Overview: Created a CSJOBS a web application portal as a part of curriculum (ON JAVA SPRING HIBERNATE).
+###Overview:
 * Project is build using MAVEN build process.
 * POM.xml( project object model)
-* User can register, login and apply jobs posted by admin
-* Admin can post/edit jobs and assign reviewers to the specific job.
-* Admin can assign reviewer head among the list of reviewers.
-* User can search and view job descriptions.
-* User can view applied jobs. 
-* How to use dependencies and create pom.xml.
+* How to use dependencies(library) and create pom.xml,persistence.xml,web.xml,ApplicationContext.xml.
+* OO query language(JPQL) Database structure. (DB used - postgres)
+* Java ORM Library implementation - JPA(java persistence api), it works on Class,annotation unlike SQL.
 * Implementation of Spring Hibernate security.

@@ -10,7 +10,7 @@
 
 
 ###Project Description:
-<p style='color:blue'>Users.</p>
+**Users**
 *There are three types of users in the system: administrators, reviewers, and applicants. For each user the system keeps the user's last name, first name, email (which is also used as username for login purpose), and password.
 *Administrators are responsible for managing users, job positions, and committees.
 *Reviewers are responsible for reviewing job applications.

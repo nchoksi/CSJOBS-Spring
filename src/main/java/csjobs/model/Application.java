@@ -23,8 +23,8 @@ import javax.persistence.UniqueConstraint;
 
 @Entity
 @Table(name = "applications",
-    uniqueConstraints = @UniqueConstraint(
-        columnNames = { "job_id", "applicant_id" }) )
+    uniqueConstraints = @UniqueConstraint(columnNames = { "job_id",
+        "applicant_id" }))
 public class Application implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -51,9 +51,11 @@ public class Application implements Serializable {
     @Column(name = "current_job_year")
     private Integer currentJobYear;
 
+    // used to create seperate table in DB
     @ElementCollection
+    // used to map with seperate table and name fields
     @CollectionTable(name = "application_degrees",
-        joinColumns = @JoinColumn(name = "application_id") )
+        joinColumns = @JoinColumn(name = "application_id"))
     @OrderBy("year desc")
     private List<Degree> degrees;
 
@@ -68,8 +70,8 @@ public class Application implements Serializable {
     @JoinColumn(name = "teaching_statement_id")
     private File teachingStatement;
 
-    @OneToMany(mappedBy = "application",
-        cascade = { CascadeType.MERGE, CascadeType.PERSIST })
+    @OneToMany(mappedBy = "application", cascade = { CascadeType.MERGE,
+        CascadeType.PERSIST })
     @OrderColumn(name = "round_index")
     private List<Round> rounds;
 

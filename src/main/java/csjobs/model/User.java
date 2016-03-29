@@ -52,7 +52,9 @@ public class User implements Serializable {
      * Anyone who doesn't have either role is a regular user, i.e. applicant.
      */
     @ElementCollection
-    @CollectionTable(name = "authorities",
+    // used to create seperate table in DB
+    @CollectionTable(name = "authorities", // used to map with seperate table
+                                           // and name fields
         joinColumns = @JoinColumn(name = "user_id"))
     @Column(name = "role")
     private Set<String> roles;
@@ -62,6 +64,7 @@ public class User implements Serializable {
      * not stored in the database.
      */
     @Transient
+    // used to indicate field is not persistence and not stored in DB
     private String password2;
 
     public User()

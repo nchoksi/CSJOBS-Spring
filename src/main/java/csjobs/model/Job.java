@@ -42,9 +42,11 @@ public class Job implements Serializable {
     private User committeeChair;
 
     @ManyToMany
+    // join two tables(users and job with new assigned table
+    // job_committee_members-------//
     @JoinTable(name = "job_committee_members",
-        joinColumns = @JoinColumn(name = "job_id") ,
-        inverseJoinColumns = @JoinColumn(name = "user_id") )
+        joinColumns = @JoinColumn(name = "job_id"),
+        inverseJoinColumns = @JoinColumn(name = "user_id"))
     @OrderBy("lastName asc")
     private List<User> committeeMembers;
 

@@ -17,3 +17,18 @@
 * Reviewers are responsible for reviewing job applications.
 * Applicants can apply for job positions.
 
+**Job Position and Review Committee**
+
+* A job position has a title, a description, a publish date (i.e. the date when the job position is announced to the public), and a close date (i.e. the date when the system stops accepting applications for the position).
+* Each job position has a review committee, which consists of 3~5 reviewers who will review the applications for the position. One of the reviewers is designated as the committee chair.  Note that a reviewer can only review (or access) an application if the reviewer is in the committee for the applied position.
+
+**Job Application**
+
+* A job application consists of the following:
+
+* Contact information: last name, first name, phone, email, and address.
+* Current job position: job title, institution (or company), start year of the current job.
+* List of college and advanced degrees: degree name, university, year.
+* Curriculum Vitae (C.V.): a PDF or MS Word document
+* Research Statement: a PDF or MS Word document
+* Teaching Statement: a PDF or MS Word document
